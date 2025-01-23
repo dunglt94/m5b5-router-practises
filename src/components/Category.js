@@ -3,7 +3,8 @@ import {useNavigate} from "react-router-dom";
 function Category() {
     const navigate = useNavigate();
     const sendDataToProduct = event => {
-        navigate(`/product/${event.target.value}`);
+        // navigate(`/product/${event.target.value}`);
+        navigate("/product", { state: { categoryId: event.target.value } });
     };
     return (
         <>

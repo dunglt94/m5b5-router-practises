@@ -30,7 +30,8 @@ function App() {
             <div>
                 <Routes>
                     <Route path="/" element={<Category />} />
-                    <Route path="/product/:categoryId" element={<Product />} />
+                    {/*<Route path="/product/:categoryId" element={<Product />} />*/}
+                    <Route path="/product" element={<Product />} />
                 </Routes>
             </div>
         </>
